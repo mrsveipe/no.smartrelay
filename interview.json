@@ -1,0 +1,185 @@
+
+"ids": {
+    "modelId": "ZigBee 30A Meter-Relay HA",
+    "manufacturerName": "Develco Products A/S"
+  },
+  "endpoints": {
+    "endpointDescriptors": [
+      {
+        "endpointId": 33,
+        "applicationProfileId": 260,
+        "applicationDeviceId": 9,
+        "applicationDeviceVersion": 1,
+        "_reserved1": 0,
+        "inputClusters": [
+          0,
+          3,
+          6,
+          1794,
+          9
+        ],
+        "outputClusters": [
+          10,
+          1030
+        ]
+      },
+      {
+        "endpointId": 1,
+        "applicationProfileId": 49353,
+        "applicationDeviceId": 1,
+        "applicationDeviceVersion": 1,
+        "_reserved1": 0,
+        "inputClusters": [
+          2,
+          3
+        ],
+        "outputClusters": [
+          1
+        ]
+      }
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": {
+          "deviceTemperature": {},
+          "identify": {}
+        },
+        "bindings": {
+          "powerConfiguration": {}
+        }
+      },
+      "33": {
+        "clusters": {
+          "basic": {
+            "attributes": [
+              {
+                "id": 0,
+                "name": "zclVersion",
+                "value": 3,
+                "reportingConfiguration": {
+                  "status": "UNREPORTABLE_ATTRIBUTE",
+                  "direction": "reported"
+                }
+              },
+              {
+                "id": 4,
+                "name": "manufacturerName",
+                "value": "Develco Products A/S",
+                "reportingConfiguration": {
+                  "status": "UNREPORTABLE_ATTRIBUTE",
+                  "direction": "reported"
+                }
+              },
+              {
+                "id": 5,
+                "name": "modelId",
+                "value": "ZigBee 30A Meter-Relay HA",
+                "reportingConfiguration": {
+                  "status": "UNREPORTABLE_ATTRIBUTE",
+                  "direction": "reported"
+                }
+              },
+              {
+                "id": 7,
+                "name": "powerSource",
+                "value": "mains",
+                "reportingConfiguration": {
+                  "status": "UNREPORTABLE_ATTRIBUTE",
+                  "direction": "reported"
+                }
+              },
+              {
+                "id": 18,
+                "name": "deviceEnabled",
+                "value": true,
+                "reportingConfiguration": {
+                  "status": "UNREPORTABLE_ATTRIBUTE",
+                  "direction": "reported"
+                }
+              }
+            ],
+            "commandsGenerated": "UNSUP_GENERAL_COMMAND",
+            "commandsReceived": "UNSUP_GENERAL_COMMAND"
+          },
+          "identify": {
+            "attributes": [
+              {
+                "id": 0,
+                "reportingConfiguration": {
+                  "status": "UNREPORTABLE_ATTRIBUTE",
+                  "direction": "reported"
+                }
+              }
+            ],
+            "commandsGenerated": "UNSUP_GENERAL_COMMAND",
+            "commandsReceived": "UNSUP_GENERAL_COMMAND"
+          },
+          "onOff": {
+            "attributes": [
+              {
+                "id": 0,
+                "name": "onOff",
+                "value": true,
+                "reportingConfiguration": {
+                  "direction": "reported",
+                  "attributeDataType": 16,
+                  "minInterval": 65535,
+                  "maxInterval": 65535,
+                  "status": "SUCCESS"
+                }
+              }
+            ],
+            "commandsGenerated": "UNSUP_GENERAL_COMMAND",
+            "commandsReceived": "UNSUP_GENERAL_COMMAND"
+          },
+          "metering": {
+            "attributes": [
+              {
+                "id": 0,
+                "name": "currentSummationDelivered",
+                "value": 0
+              },
+              {
+                "id": 512
+              },
+              {
+                "id": 768
+              },
+              {
+                "id": 769,
+                "name": "multiplier",
+                "value": 1
+              },
+              {
+                "id": 770,
+                "name": "divisor",
+                "value": 1000
+              },
+              {
+                "id": 771
+              },
+              {
+                "id": 772
+              },
+              {
+                "id": 774
+              },
+              {
+                "id": 776
+              },
+              {
+                "id": 1024,
+                "name": "instantaneousDemand",
+                "value": 16
+              }
+            ]
+          },
+          "alarms": {}
+        },
+        "bindings": {
+          "time": {},
+          "occupancySensing": {}
+        }
+      }
+    }
+  }
