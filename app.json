@@ -33,12 +33,9 @@
       },
       "class": "other",
       "capabilities": [
-        "measure_current",
         "meter_power",
         "measure_power",
-        "measure_temperature",
-        "onoff",
-        "measure_voltage"
+        "onoff"
       ],
       "platforms": [
         "local"
@@ -46,6 +43,9 @@
       "connectivity": [
         "zigbee"
       ],
+      "energy": {
+        "cumulative": true
+      },
       "images": {
         "small": "/drivers/zigbee-30a-meter-relay-ha/assets/images/small.png",
         "large": "/drivers/zigbee-30a-meter-relay-ha/assets/images/large.png",
@@ -61,8 +61,7 @@
             "clusters": [
               2,
               3
-            ],
-            "bindings": []
+            ]
           },
           "33": {
             "clusters": [
@@ -72,14 +71,16 @@
               1794
             ],
             "bindings": [
-              6
+              6,
+              1794
             ]
           }
         },
         "learnmode": {
           "image": "/drivers/my_driver/assets/learnmode.svg",
           "instruction": {
-            "en": "Press the button on your device three times"
+            "en": "Press the button on your device three times",
+            "no": "Trykk inn knappen og hold inne til reléet klikker"
           }
         }
       },
