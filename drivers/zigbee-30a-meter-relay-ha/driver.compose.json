@@ -5,7 +5,6 @@
   "class": "other",
   "capabilities": [
     "meter_power",
-    "measure_power",
     "onoff"
   ],
   "platforms": [
