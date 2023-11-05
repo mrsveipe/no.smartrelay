@@ -13,7 +13,13 @@ class MeterRelay30A extends ZigBeeDevice {
     this.printNode();
 
     this.registerCapability('onoff', CLUSTER.ON_OFF);
-    this.registerCapability('meter_power', CLUSTER.METERING);
+    this.registerCapability('meter_power', CLUSTER.METERING, {
+      getOpts: {
+        getOnStart: true,
+        pollInterval: 600,
+				getOnOnline: true
+	    }
+    });
   }
 
   /**
